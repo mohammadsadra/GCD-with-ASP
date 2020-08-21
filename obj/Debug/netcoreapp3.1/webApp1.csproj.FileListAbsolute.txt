@@ -35,3 +35,4 @@
 /Users/mohammadsadra/Desktop/ASP Project/webApp1/webApp1/obj/Debug/netcoreapp3.1/webApp1.genruntimeconfig.cache
 /Users/mohammadsadra/Desktop/ASP Project/webApp1/webApp1/obj/Debug/netcoreapp3.1/webApp1.csproj.CopyComplete
 /Users/mohammadsadra/Desktop/ASP Project/webApp1/webApp1/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/mohammadsadra/Desktop/ASP Project/webApp1/webApp1/obj/Debug/netcoreapp3.1/Razor/Views/Home/Ans.cshtml.g.cs

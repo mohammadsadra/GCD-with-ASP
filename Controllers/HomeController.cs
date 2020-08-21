@@ -21,7 +21,7 @@ namespace webApp1.Controllers
             _logger = logger;
         }
 
-        private string GCD(long n1, long n2, long n3, long n4, int len)
+        private async Task<string> GCD(long n1, long n2, long n3, long n4, int len)
         {
             
                 if (n2 == 0)
@@ -34,7 +34,7 @@ namespace webApp1.Controllers
                 }
                 else
                 {
-                    return GCD(n2, n1 % n2, n3, n4, len);
+                    return await GCD(n2, n1 % n2, n3, n4, len);
                 }
 
         }
@@ -50,6 +50,7 @@ namespace webApp1.Controllers
         {
             return View();
         }
+        
         [HttpPost]
         public async Task<IActionResult> PrivacyAsync(InputNumbers inputNumbers)
         {
@@ -57,9 +58,11 @@ namespace webApp1.Controllers
                 _inputNumbers.firstNum = inputNumbers.firstNum;
                 _inputNumbers.secondNum = inputNumbers.secondNum;
                 var len = inputNumbers.firstNum.ToString().Length;
-                string ans = GCD(inputNumbers.firstNum, inputNumbers.secondNum, inputNumbers.firstNum, inputNumbers.secondNum, len);
-                await Response.WriteAsync((string)ans);
-                return View();
+                string ans =  await GCD(inputNumbers.firstNum, inputNumbers.secondNum, inputNumbers.firstNum, inputNumbers.secondNum, len);
+
+                ViewBag.Ans = ans;
+              
+                return View("Ans");
             }
             else
             {
