@@ -1,0 +1,25 @@
+﻿@model InputNumbers
+@{
+    ViewData["Title"] = "GCD";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to compute GCD of two numbers.</p>
+<form asp-action="Privacy" asp-controller="Home" method="POST">
+    <div>
+        
+        <label asp-for="firstNum"></label>
+        <input asp-for="firstNum" />
+        <span asp-validation-for="firstNum"></span>
+    </div>
+
+    <div>
+        <label asp-for="secondNum"></label>
+        <input asp-for="secondNum" />
+        <span asp-validation-for="secondNum"></span>
+    </div>
+
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KGwEyEbN6fXlJcAlkb6Go/j3VrycCTE24Xjyd1jSZLBcmRY+MCi/Co72wkZvSYYvh6bKiorgf0A186ow8eZDyA==",
+  "success": true,
+  "projectFilePath": "/Users/mohammadsadra/Desktop/ASP Project/webApp1/webApp1/webApp1.csproj",
+  "expectedPackageFiles": [
+    "/Users/mohammadsadra/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
